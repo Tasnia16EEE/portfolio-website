@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b712ba52d9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</head>
+
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Research </a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row1">
+            <div class="header-text">
+                <p>Machine Learning <span> / </span>AI Enthusiast</p>
+                <p>Research Assistant @ University of Washington</p>
+                <h1>Hi, I'm <span>Tasnia Sultana</span> <br> from Washington, USA</h1>
+            </div>
+            <div class="picture">
+              <dotlottie-player 
+                src="https://lottie.host/0f73df33-0404-47ce-b155-e70d09bff330/Qdd7XPcngO.lottie" 
+                background="transparent" 
+                speed="1" 
+                style="width: 400px; height: 400px" 
+                loop 
+                autoplay>
+              </dotlottie-player>
+            </div>
+        </div>        
+    </div>
+</div>
+<!-- -------about------- --->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="my-image/user2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p style="text-align: justify;">
+                    I specialize in developing scalable AI solutions for resource-constrained environments, with a strong focus on neural network compression techniques including pruning, quantization, and knowledge distillation.
+                    <br><br>
+                    My work spans model evaluation, dataset development, and multimodal optimization—driven by hands-on experience with Python, SQL, and PyTorch in computer vision and deep learning applications.
+                    <br><br>
+                    With a background in Electrical and Electronic Engineering from Chittagong University of Engineering & Technology and ongoing graduate studies in Computer Science & Systems, I bring both theoretical depth and practical versatility.
+                    <br><br>
+                    My research and industry projects have included spatial trajectory analysis, explainable AI, and big data analytics. Passionate about making AI more efficient and accessible, I aim to deliver high-impact, production-ready solutions through interdisciplinary collaboration at the intersection of innovation and real-world applicability.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('concepts')">Concepts</p>
+                    <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>                   
+                        <li><span>Programming Languages</span><br>Python, R, SQL, C++, Java, HTML, CSS, JavaScript, MATLAB</li>
+                        <li><span>Tools</span><br>Google Colab, Jupyter Notebook, Visual Studio Code, Notebook+, Weights & Biases, Tableau, Power BI, Azure, AWS, Git, JIRA</li>
+                        <li><span>ML Frameworks</span><br>Scikit-learn, TensorFlow, Keras, PyTorch, PyTorch Lightning, Hugging Face Transformers, ONNX, OpenCV, Pandas, NumPy, Matplotlib, Seaborn</li>
+                        <li><span>Soft Skills</span><br>Teamwork, Communication, Problem Solving, Time Management, Leadership</li>
+                        <li><span>Languages</span><br>English, Bengali, Hindi</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Sept 2023 - Present  </span> <br> Research Assistant <br> University of Washington Tacoma  </li>
+                        <li><span>Mar 2025 - May 2025  </span> <br>Data Intern <br> IB Analytica USA </li>
+                        <li><span>Jul 2022 - Dec 2022  </span> <br> Junior Software Engineer Intern  <br> Sourcetop Inc Bangladesh  </li>
+                        <li><span>Jul 2022 - Dec 2022  </span> <br>General Secretary <br> Andromeda Space & Robotics Organization </li>
+                        <li><span>Jul 2022 - Dec 2022  </span> <br>Python Instructor <br> Andromeda Space & Robotics Organization</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Present</span><br>Master of Science in Computer Science & Systems<br>
+                            University of Washington Tacoma, Washington, USA<br>
+                            GPA: 3.95/4.00</li>
+                        <li><span>2017-2022</span><br>Bachelor of Science in Electrical & Electronic Engineering<br>
+                            Chittagong University of Engineering and Technology, Chattogram, Bangladesh<br>
+                            CGPA: 3.43/4.00</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="concepts">
+                    <ul>                   
+                        <li style="text-align: justify;"><span>AI Concepts</span><br>Machine Learning, Supervised Learning, Unsupervised Learning, Reinforcement Learning, Deep Learning, Model Training & Evaluation, Natural Language Processing (NLP), Hyperparameter Fine Tuning, Interpretability, Vision-Language Models, Transformer Compression, Recommendation Systems</li>
+                        <li style="text-align: justify;"><span>Computer Vision Concepts</span><br>Image Recognition, Object Detection, Image Classification, Feature Extraction, OpenCV, TensorFlow/Keras for Vision Tasks</li>
+                        <li style="text-align: justify;"><span>Scalable AI Concepts</span><br>End-to-End Pipeline Design, Distributed Training, Model Compression (Quantization, Pruning, Knowledge Distillation), Lightweight Inference (ONNX, TensorFlow Lite), Multimodal AI Integration, Production-Level Model Optimization</li>
+                        <li style="text-align: justify;"><span>Front-end Development</span><br>User Interface, Building & Maintaining Websites</li>
+                        <li style="text-align: justify;"><span>Data Science</span><br>EDA Analysis, Regression, Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="courses">
+                    <ul>                   
+                        <li>Data Structures and Algorithms</li>
+                        <li>Machine Learning</li> 
+                        <li>Data Science</li>
+                        <li>Database Management Systems</li>
+                        <li>Spatial Databases with GIS Applications </li>
+                        <li>Query Processing and Optimization</li>
+                        <li>Software Engineering</li>
+                        <li>Netwrork Systems</li>
+                        <li>Computer Architecture</li>
+                        <li>Operating Systems</li>
+                        <li>Distributed Computing</li>
+                        <li>Multimodal Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">Research Experience & Publications</h1>
+      <div class="services-list">
+        <div>
+          
+          <h2>Computer Vision</h2>
+          <p>A Computer Vision Approach for Detecting Discrepancies in Map Textual Labels”, Published at Journal of Distributed and Parallel Databases.</p>
+          <a href="https://link.springer.com/article/10.1007/s10619-025-07453-z">Learn more</a>
+        </div>
+        <div>
+          <h2>Scalabe AI</h2>
+          <p>MiniMedAssistant: A Multimodal Medical Assistant Model for Resource Constrained Devices.</p>
+          <a href="#">In Progress</a>
+        </div>
+        <div>
+          <h2>Model Compression</h2>
+          <p>Survey on Multimodal Large Language Model Compression</p>
+          <a href="#">In Progress</a>
+        </div>
+        <div>
+          <h2>Electrical Model Simulation</h2>
+          <p>Effect of scandium concentration on the performances of cantilever based AlN unimorph piezoelectric energy harvester with silicon nitride substrate</p>
+          <a href="https://link.springer.com/article/10.1007/s40243-024-00272-9">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">Project Experience</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="my-image/work1.png" alt="Project 1"/>
+          <div class="layer">
+            <h3>Fashion Product Recommendation System Using CLIP</h3>
+            <p>A CLIP-based fashion recommender that returns visually and textually similar items using image and text input.</p>
+            <a href="https://github.com/Tasnia16EEE/Fashion-Product-Recommendation-System-Using-Clip"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work2.png" alt="Project 2"/>
+          <div class="layer">
+            <h3>Movie Recommender System</h3>
+            <p>A hybrid movie recommender using collaborative + content-based filtering</p>
+            <a href="https://github.com/Tasnia16EEE/Movie-Recommender-System"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work3.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Understanding Key Features of Swin V2 Transformer</h3>
+            <p>This project uses LIME to analyze SwinV2's object classification, revealing key feature dependencies and suggesting dataset refinement for improved accuracy.</p>
+            <a href="https://github.com/Tasnia16EEE/Swin-Transformer-Understanding-Key-Features-and-Dataset-Refinement"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work4.png" alt="Project 2"/>
+          <div class="layer">
+            <h3>Mask2Former Model Feature Importance</h3>
+            <p>This study explores feature importance in Mask2Former to improve interpretability, robustness, and transparency in image segmentation and object detection tasks.</p>
+            <a href="https://github.com/Tasnia16EEE/Feature-Importance-of-Mask2Former-Model"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work5.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Swin Transformer Lime Interpretability</h3>
+            <p>This project uses LIME to interpret Swin Transformer classifications, enhancing model transparency and trustworthiness.</p>
+            <a href="https://github.com/Tasnia16EEE/Lime_Interpretability"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work8.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Similarity Detection in Trajectory Databases to Facilitate Ridesharing</h3>
+            <p>Developed clustering algorithm with QuickBundles and DBSCAN with spatiotemporal metrics on SF Taxi Dataset, proposed bus route improvements.</p>
+            <a href="https://github.com/Tasnia16EEE/Similarity-Detection-in-Trajectory-Databases-to-Facilitate-Ridesharing/tree/main"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work9.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Quantization Aware Dynamic Scheduling Task Parallelization for Resource Constrained Devices</h3>
+            <p>Proposed a framework to speed up inference and optimize multimodal AI on low-power devices using Task parallelization, Heterogenous Dynalic Scheduling, Graph Optimization.</p>
+            <a href="https://github.com/Tasnia16EEE/Quantization-Aware-Dynamic-Scheduling-Task-Parallelization-for-Resource-Constrained-Devices"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work10.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Pruning Vision Transformer SwinV2</h3>
+            <p>Compressing the vision transformer</p>
+            <a href="https://colab.research.google.com/drive/1NBiobfeJgYQiIMkGLK17DzcFWGWFi_uk?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="my-image/work7.png" alt="Project 3"/>
+          <div class="layer">
+            <h3>Data Science Projects and SQL Query Optimization</h3>
+            <p>Data Science Portfolio</p>
+            <a href="https://www.datascienceportfol.io/sultanatasniaeee92"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> sultanatasniaeee92@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> +12533573143</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tasnia-sultana-15090a186/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Tasnia16EEE"><i class="fab fa-github"></i></a>
+            <a href="https://scholar.google.com/citations?user=otnK6ocAAAAJ&hl=en"><i class="fab fa-google-scholar"></i></a>
+            <a href="https://www.youtube.com/watch?v=J9PnEiOSzkQ"><i class="fab fa-youtube"></i></a>
+
+          </div>
+          <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="copyright">
+    <p>Copyright © Tasnia</p>
+  </div>
+
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+
+</body>
+</html>
